@@ -11,18 +11,18 @@ Ejercitar la escritura de código en ambientes colaborativos utilizando una meto
 
 ### Integrantes
 
-Nro | Nombre | Legajo | Mail
-----|--------|--------|------
-1   |        |        |
-2   |        |        |
-3   |        |        |
-4   |        |        |
+Nro |       Nombre            | Legajo | Mail
+----|-------------------------|--------|------
+1   | Pasquale Gabriel        | 33566  | pasqualeunq@gmail.com
+2   | Autalan Fernando Nahuel | 38046  | f.n.autalan@gmail.com
+3   | Dominikow Ivan Diego    | 37517  | dominikowivan@gmail.com
+4   | Degano Victor           | 26106  | flame.el22@gmail.com
     
 ### Entrega
 
 16 / 05 / 2018
 
-## Pacman
+## Pacman7
 
 El objetivo de este ejercicio es implementar parcialmente el modelo del juego [Pacman][2] siguiendo los criterios listados en la sección Objetivos.
 
