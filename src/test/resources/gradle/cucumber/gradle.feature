@@ -1,4 +1,6 @@
 Feature: Gradle-Cucumber integration
 
-  Scenario: Just a failing scenario
-    When I run a failing step
+  Scenario: Prueba de testeo
+    Given un booleano
+    When hago un assert true
+    Then me devuelve true
