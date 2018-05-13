@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pasqualegabriel/eis_201801c_tp_grupal.svg?branch=master)](https://travis-ci.org/pasqualegabriel/eis_201801c_tp_grupal)
+
 ## Objetivos del TP grupal
 Ejercitar la escritura de código en ambientes colaborativos utilizando una metodología de diseño guiada por pruebas ejecutanto un flujo de trabajo que facilite la integración frecuente de código.
 
