@@ -1,13 +1,9 @@
 package Alimentos;
 
-public class Biscuit
-{
-    private int valor;
+public class Biscuit extends Alimento {
 
-    public Biscuit(int unValor)
-    {   this.valor  = unValor;  }
-
-    public int valor()
-    {   return this.valor;  }
+    public Biscuit(int unValor) {
+        super(unValor);
+    }
 
 }

@@ -4,3 +4,8 @@ Feature: Pacman Come
     Given Un Pacman
     When come un bisquit
     Then suma puntos
+
+  Scenario: Pacman come una fruta se vuelve más gordo (suma puntos).
+    Given Pacman come una fruta
+    When Se come una fruta
+    Then Suma 60 puntos

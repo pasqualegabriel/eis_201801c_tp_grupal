@@ -1,6 +1,6 @@
 package Pacman;
 
-import Alimentos.Biscuit;
+import Alimentos.Alimento;
 
 public class Pacman
 {
@@ -9,8 +9,8 @@ public class Pacman
     public Pacman()
     {   puntosAcumulados    = 0;    }
 
-    public void come(Biscuit unBiscuit)
-    {   this.puntos(this.puntos() + unBiscuit.valor());   }
+    public void come(Alimento unAlimento)
+    {   this.puntos(this.puntos() + unAlimento.valor());   }
 
     public int puntos()
     {   return puntosAcumulados;    }
