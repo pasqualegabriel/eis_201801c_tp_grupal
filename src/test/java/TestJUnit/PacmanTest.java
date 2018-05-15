@@ -1,6 +1,7 @@
 package TestJUnit;
 
 import Alimentos.Biscuit;
+import Fantasma.Fantasma;
 import Pacman.Pacman;
 import org.junit.Before;
 import org.junit.Test;
@@ -38,6 +39,23 @@ public class PacmanTest {
         this.unNuevoPacmanSut.come(unBiscuit);
         // Test
         assertEquals(30, this.unNuevoPacmanSut.puntos());
+    }
+
+    @Test
+    public void Test_Cuando_un_pacman_es_creado_esta_vivo()
+    {   assertTrue(unNuevoPacmanSut.estaVivo());    }
+
+    @Test
+    public void Test_Cuando_un_pacman_Choca_a_Un_fantasma_el_pacman_muere()
+    {
+        // Setup
+        Fantasma unFantasma = new Fantasma();
+
+        // Exercise
+        this.unNuevoPacmanSut.choca(unFantasma);
+
+        // Test
+        assertFalse(this.unNuevoPacmanSut.estaVivo());
     }
 
 }
