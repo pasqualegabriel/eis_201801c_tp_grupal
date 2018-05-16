@@ -20,6 +20,7 @@ public class PacmanComeStepdefs {
     private Biscuit unBiscuitDe20;
     private Fruta unaFrutaDe60;
     private Pellet unaPellet;
+    private Fantasma unFantasmaDebilitado;
     private List<Fantasma> fantasmas = new ArrayList<>();
 
 
@@ -78,6 +79,24 @@ public class PacmanComeStepdefs {
     @Then("^Debilita A Los Fantasmas$")
     public void AlComerlaEsteDebilitaALosFantasmas() {
         assertTrue(this.unNuevoPacman.getFantasmas().stream().allMatch(Fantasma::getEstaDevilitado));
+    }
+
+    @Given("^Va a chocar$")
+    public void aunPacmanComeUnaPellet() {
+        unFantasmaDebilitado = new Fantasma();
+        unNuevoPacman        = new Pacman(fantasmas);
+    }
+
+    @When("^Fantasma debilitado$")
+    public void aElPacmanSeComeUnapellet() {
+        this.unFantasmaDebilitado.devilitate();
+        unNuevoPacman.choca(unFantasmaDebilitado);
+    }
+
+    @Then("^No muere$")
+    public void aAlComerlaEsteDebilitaALosFantasmas() {
+        assertTrue(this.unNuevoPacman.estaVivo());
+        assertFalse(this.unFantasmaDebilitado.tieneCuerpo());
     }
 
 

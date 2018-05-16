@@ -77,5 +77,21 @@ public class PacmanTest {
         assertTrue(this.unNuevoPacmanSut.getFantasmas().stream().allMatch(Fantasma::getEstaDevilitado));
     }
 
+    @Test
+    public void testCuandoUnPacmanChocaContraUnFantasmaDebilitadoNoMuereYElFantasmaSeQuedaSinCuerpo(){
+
+        // Setup
+        Fantasma unFantasmaDebilitado = new Fantasma();
+        Pacman   unPacman             = new Pacman(fantasmas);
+
+        // Exercise
+        unFantasmaDebilitado.devilitate();
+        unPacman.choca(unFantasmaDebilitado);
+
+        // Test
+        assertTrue(unPacman.estaVivo());
+        assertFalse(unFantasmaDebilitado.tieneCuerpo());
+    }
+
 
 }

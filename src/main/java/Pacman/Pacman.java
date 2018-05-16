@@ -40,6 +40,12 @@ public class Pacman
     public boolean estaVivo()
     {   return vivo;    }
 
-    public void choca(Fantasma unFantasma)
-    {   this.vivo   = false;    }
+    public void choca(Fantasma unFantasma){
+        if(unFantasma.getEstaDevilitado()){
+            unFantasma.sinCuerpo();
+        } else {
+            this.vivo   = false;
+        }
+
+    }
 }
