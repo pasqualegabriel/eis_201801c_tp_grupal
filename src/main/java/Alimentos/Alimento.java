@@ -8,8 +8,13 @@ public abstract class Alimento {
         this.valor  = unValor;
     }
 
-    public int valor() {
+    public int getValor() {
         return this.valor;
     }
+
+
+    public boolean isPellet(){return false; }
+
+
 
 }

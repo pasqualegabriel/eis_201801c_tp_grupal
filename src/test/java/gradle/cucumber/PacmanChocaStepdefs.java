@@ -5,6 +5,8 @@ import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dados;
 import cucumber.api.java.es.Entonces;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 
@@ -12,11 +14,12 @@ public class PacmanChocaStepdefs {
 
     private Pacman unPacman;
     private Fantasma unFantasma;
+    private List<Fantasma> Fantasmas;
 
     @Dados("^Un Pacman y un Fantasma$")
     public void Un_Pacman_y_un_Fantasma()
     {
-        unPacman  = new Pacman();
+        unPacman  = new Pacman(Fantasmas);
         unFantasma     = new Fantasma();
     }
 

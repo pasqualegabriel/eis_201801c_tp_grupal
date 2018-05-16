@@ -9,3 +9,8 @@ Feature: Pacman Come
     Given Pacman come una fruta
     When Se come una fruta
     Then Suma 60 puntos
+
+  Scenario: Pacman come una fruta se vuelve más gordo (suma puntos).
+    Given Pacman come una Pellet
+    When Se como una pellet
+    Then Debilita A Los Fantasmas
