@@ -11,12 +11,14 @@ public class Pacman
     private Integer puntosAcumulados;
     private Boolean vivo;
     private List<Fantasma> fantasmas= new ArrayList<>();
+    private ProvedorDeChoques proovedorDeChoques;
 
     public Pacman(List<Fantasma> unosFantasmas)
     {
         puntosAcumulados    = 0;
         vivo                = true;
         fantasmas           = unosFantasmas;
+        proovedorDeChoques  = new ProvedorDeChoques();
     }
 
     public List<Fantasma> getFantasmas(){
@@ -41,11 +43,10 @@ public class Pacman
     {   return vivo;    }
 
     public void choca(Fantasma unFantasma){
-        if(unFantasma.getEstaDevilitado()){
-            unFantasma.sinCuerpo();
-        } else {
-            this.vivo   = false;
-        }
+        proovedorDeChoques.handle(this,unFantasma);
+    }
 
+    public void morir() {
+        this.vivo = false;
     }
 }

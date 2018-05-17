@@ -30,4 +30,21 @@ public class PacmanChocaStepdefs {
     @Entonces("^El Pacman Muere$")
     public void El_pacman_muere()
     {   assertTrue(! unPacman.estaVivo());    }
+
+
+    @Dados("^Va a chocar un fantasma$")
+    public void Un_Pacman_y_un_Fantasma_sin_cuerpo()
+    {
+        unPacman  = new Pacman(Fantasmas);
+        unFantasma     = new Fantasma();
+        unFantasma.sinCuerpo();
+    }
+
+    @Cuando("^Fantasma sin cuerpo$")
+    public void El_pacman_Y_el_Fantasma_sin_cuerpo_chocan()
+    {   unPacman.choca(unFantasma);   }
+
+    @Entonces("^No fallece$")
+    public void El_pacman_no_muere()
+    {   assertTrue(unPacman.estaVivo() && !unFantasma.tieneCuerpo());    }
 }
