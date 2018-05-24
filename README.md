@@ -11,6 +11,18 @@ Ejercitar la escritura de código en ambientes colaborativos utilizando una meto
 4. Generar el modelo tal que cumpla con las _Pruebas de Aceptación_ para el problema listado en la próxima sección (_Pacman_).
 5. Completar tados de los integrantes del grupo utilizando este archivo (```README.md```)
 
+### Feedback
+
+- [X] (1) Ok
+- [X] (2) **Los nombres de los branches no transmiten que feature se implementa.**
+- [ ] (3) **No se puede evaluar porque no se ejecutaban las pruebas de aceptación.**
+- [X] (4)
+- [X] (5)
+
+Se observa disparidad en la colaboración de los integrantes del equipo. Ver [stats][1] agregadas .
+
+NOTA: 6.
+
 ### Integrantes
 
 Nro |       Nombre            | Legajo | Mail
@@ -40,3 +52,4 @@ El objetivo de este ejercicio es implementar parcialmente el modelo del juego [P
 
 [1]: https://travis-ci.org/
 [2]: https://en.wikipedia.org/wiki/Pac-Man
+[3]: ./stats/index.html
